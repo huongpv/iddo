@@ -1,0 +1,335 @@
+//less code
+* {
+	margin: 0;
+	padding: 0;
+}
+//define
+@default-color: blue;
+
+.default-bg {
+	background-color: @default-color;
+}
+.default-color {
+	color: @default-color;	
+}
+.gray-bg {
+	background-color: rgb(102, 102, 102);
+}
+h1 {
+	text-transform: uppercase; font-size: 45px;
+}
+h3 {
+	color: @default-color; text-transform: uppercase; font-size: 20px;
+}
+.default-border {
+	border: 1px solid @default-color;
+	border-radius: 4px;
+}
+#section1 {color: #fff; background-color: @default-color; padding-top: 40px;}
+#section2 {color: #000; background-color: lightgrey; padding-top: 60px; padding-bottom: 60px;}
+#section3 {color: #000; background-color: #fff; padding-top: 60px; padding-bottom: 60px;}
+#section4 {color: #000; background-color: #fff; padding-top: 60px; padding-bottom: 60px;}
+#section5 {color: #000; background-color: lightgrey; padding-top: 60px; padding-bottom: 60px;}
+body {
+	-webkit-font-smoothing: antialiased;
+    font-size: 12px;
+}
+//header
+.my-nav {
+	padding: 0 30px;
+}
+.navbar-inverse {
+	margin-bottom: 0; border-radius: 0;
+	padding: 0 15px;
+}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav li a {
+	color: white;
+}
+.navbar-header {
+	padding-right: 30px; //gian khoang cach navbar-bran voi navbar-nav
+}
+.navbar-nav {
+	padding: 0 40px; //tao khoang cach giua cac menu
+}
+.navbar-right {
+	padding: 15px; //tao padding cho sign-up dong thoi giam margin-right mac dinh cua bootstrap di 15px
+}
+.sign-up a{
+	padding: 0 10px !important; 
+	color: @default-color !important; 
+}
+.video {
+	padding-top: 15%; padding-bottom: 15%;
+	p {
+		font-size: 45px; color: white; margin-bottom: -5px;
+	}
+}
+.video-circle{
+	width: 100px; height: 100px; border-radius: 50px; color: #fff;
+	line-height: 100px;text-align: center; border: 10px solid #fff; 
+	margin: 0 15px;
+	i {
+		color: #fff;
+		font-size: 80px;
+	}
+}
+//.video-logo {
+//	circle {
+//		fill: gray;
+//		stroke-width: 10px; // dung trong ban test-scroll.htmll dung.
+//	}
+//}
+// cac the col-md khong co padding trai, phai.
+
+
+//main
+
+//bo di
+svg text {
+   font-family: FontAwesome;
+   fill: white; //la color cua text
+   //stroke: green; stroke la border.
+   font-size: 20px;
+   //text-algin: center;
+}
+circle {
+   fill: @default-color; //la color cua background
+   stroke: white; //mau border
+   stroke-width: 1px; //do rong border
+}
+.uppercase {
+	text-transform: uppercase; font-size: 45px; 
+	padding-bottom: 20px;
+	padding-right: 10px;
+	p {
+		margin-top: -20px;
+	}
+}
+//
+
+//
+.our {
+	border-bottom: 5px solid; // tao border cho tat ca cac the co OUR
+}
+//section1
+.section1 {
+	padding-bottom: 40px;
+	h3 {
+		color: #fff;
+	}
+}
+.section1-circle {
+	width: 90px; height: 90px; border-radius: 45px; color: #fff;
+	line-height: 100px;text-align: center; background: green;border: 2px solid #fff; 
+	//padding: 0 15px;
+	a {
+		color: #fff;
+	}
+	i {
+		font-size: 40px;
+	}
+}
+//gly
+.gly {
+	padding: 40px 0;
+	text-align: center;
+	i {
+		padding: 0 60px; font-size: 35px;
+		color: @default-color;
+	}
+}
+//section2
+.nav-pills {
+	padding-bottom: 45px;
+	li {
+	    line-height: 10px;
+	    margin-right: 20px;
+	    a {
+			border: 2px solid @default-color; border-radius: 10px; padding: 8px 16px; color: @default-color;
+		}
+		.active>a {
+			background-color: @default-color;
+		}
+	}
+}
+.section2 {
+	padding-bottom: 10px;
+	.project:first-child {
+		padding-left: 0;
+		padding-right: 20px
+	}
+	.project:last-child {
+		padding-right: 0;
+		padding-left: 20px;
+	}
+}
+.project {
+	padding: 10px;
+}
+.polaroid {
+	background-color: rgb(102, 102, 102);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+}
+.khung2 {
+	background-color: white;
+	text-align: center;
+	padding-top: 5px;
+    padding-bottom: 5px;
+	p {
+		color: black;
+	}
+}
+.plus i {
+	font-size: 25px;
+	color: @default-color;
+}
+// testimonail
+.testimonial {
+	padding: 30px 20%;
+	text-align: center;
+	color: #fff;
+	q {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	h3 {
+		color: #fff;
+	}
+}
+.testimonail-circle {
+	width: 70px; height: 70px; border-radius: 35px;
+}
+.img-style {
+	padding-top: 20px;
+	margin-bottom: -10px;
+}
+.carousel-indicators {
+    bottom: -20px;
+}
+.carousel-inner {
+	padding-bottom: 20px;
+}
+//section3
+.intro {
+	padding-top: 30px; padding-bottom: 30px;
+}
+.section3-circle {
+	width: 140px; height: 140px; border-radius: 70px;
+}
+.section3-gly {
+	position: absolute;
+    top: 50px;
+    left: 130px;
+    .col-md-4 {
+    	margin-right: -10px;
+    }
+}
+.section3-circle2 {
+	width: 40px; height: 40px; border-radius: 20px; 
+	text-align: center; background: @default-color; line-height: 40px;
+	i {
+		color: #fff;
+		font-size: 15px;
+	}
+}
+.intro2 {
+	padding-left: 85px;
+}
+// number
+.number {
+	padding: 60px 9%;
+	text-align: center;
+	color: #fff;
+	i, p {
+		font-size: 50px;	
+	}
+	p {
+		margin-bottom: -10px;
+    	margin-top: 20px;
+	}
+	h3 {
+		font-size: 13px;
+		color: #fff;
+	}
+}
+// section4
+#section4 {
+	.col-md-3 {
+		padding-left: 0;
+	}
+	.intro2 {
+		padding-left: 95px;
+	}
+	h4 {
+		color: @default-color;
+	}
+}
+// email
+.default-bg {
+	text-align: center;
+	padding: 20px;
+	input {
+		border: none;
+		background-color: @default-color;
+		color: #fff;
+		font-size: 33px;
+	}
+}
+.btn {
+	color: @default-color;
+	padding: 10px 50px;
+	border-radius: 10px;
+	border-color: #fff;
+	margin-bottom: 13px;
+}
+// partner
+.mau4-bg {
+	text-align: center;
+	padding: 20px;
+	ul {
+		padding: 40px;
+		margin-bottom: 0;
+	}
+	li{
+		display: inline;
+		background: #AFADAD;
+		padding: 40px;
+		margin: 15px;
+	}
+}
+//section5
+.gly2 {
+	font-size: 15px;
+	padding-bottom: 30px;
+	i {
+	    padding-right: 20px;
+	  	color: @default-color;
+	}
+}
+#section5 {
+	button {
+		width: 100%;
+	}
+}
+.btn2 {
+	padding: 15px;
+}
+.form-control {
+	padding: 25px 12px;
+	margin-bottom: 20px;
+	border-color: #000;
+    border-radius: 0;
+}
+//
+footer {
+	text-align: center;
+	color: #fff;
+	background: #000;
+	i {
+		color: @default-color;
+	}
+	padding-bottom: 10px;
+}
+
+

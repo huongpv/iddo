@@ -1,0 +1,604 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html itemscope itemtype="https://schema.org/" id="ie6" class="ie" lang="en-US"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="https://schema.org/" id="ie7" class="ie" lang="en-US"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="https://schema.org/" id="ie8" class="ie" lang="en-US"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="https://schema.org/" id="ie9" class="ie" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!--><html itemscope itemtype="https://schema.org/" lang="en-US"><!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    <title>Gulp Starter with Less ♥ Scotch</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- ICONS - fontawesome... -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">  -->
+    
+ 
+    <!-- ICONS - THANKS A LOT APPLE... -->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://scotch.io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-152.png">
+    <meta name="application-name" content="Scotch Scotch scotch">
+    <meta name="msapplication-TileImage" content="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-144.png">
+    <meta name="msapplication-TileColor" content="#2A2A2A">
+
+    <!-- SEARCH -->
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <link rel="canonical" href="">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image:src" content="">
+
+    <!-- FACEBOOK -->
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="fb:app_id" content="">
+    <meta property="fb:admins" content="">
+
+    <!-- G+ -->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="build/bootstrap.css">
+    <!-- <link rel="stylesheet" href="build/slices.css"> -->
+    <link rel="stylesheet" href="build/style.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container my-nav">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand" href="#">IDDO</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+                <li><a href="#section5">Section 5</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="sign-up"><a href="#" class="default-border">Sign up</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="gray-bg">
+            <div class="container video">
+                <!--Logo Video-->
+                <div class="col-md-2 video-circle">
+                    <a href="#"><i class="fa fa-caret-right"></i></a>
+                </div>
+                
+                <div class="col-md-10 hidden-xs">
+                    <p>Let me show you a few things.</p>
+                    <a href="#" class="default-color">Click to play video</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="section1">
+            <div class="container">
+                <div class="col-md-4 col-xs-12"><h1>Our <p class="our">Services.</p></h1></div>
+                <div class="col-md-8 col-xs-12">
+                    <div class="section1 col-md-6 col-xs-6">
+                        <div class="col-md-4 section1-circle">
+                            <a href="#"><i class="fa fa-cloud"></i></a>
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Future 1</h3>
+                            <p>Don't want your columns to simply stack in smaller devices? </p>
+                        </div>
+                    </div>
+                    <div class="section1 col-md-6 col-xs-6">
+                        <div class="col-md-4 section1-circle">
+                            <a href="#"><i class="fa fa-cloud"></i></a>
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Future 1</h3>
+                            <p>Don't want your columns to simply stack in smaller devices? </p>
+                        </div>
+                    </div>
+                    <div class="section1 col-md-6 col-xs-6">
+                        <div class="col-md-4 section1-circle">
+                            <a href="#"><i class="fa fa-cloud"></i></a>
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Future 1</h3>
+                            <p>Don't want your columns to simply stack in smaller devices? </p>
+                        </div>
+                    </div>
+                    <div class="section1 col-md-6 col-xs-6">
+                        <div class="col-md-4 section1-circle">
+                            <a href="#"><i class="fa fa-cloud"></i></a>
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Future 1</h3>
+                            <p>Don't want your columns to simply stack in smaller devices? </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container gly">
+            <a href="#"><i class="fa fa-lightbulb-o"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+            <a href="#"><i class="fa fa-camera-retro"></i></a>
+            <a href="#"><i class="fa fa-unlock-alt"></i></a>
+            <a href="#"><i class="fa fa-microphone"></i></a>
+            <a href="#"><i class="fa fa-sitemap"></i></a>
+        </div>
+        <section id="section2">
+            <div class="container">
+                <div class="col-md-4"><h1>Our <p class="our">works.</p></h1></div>
+                <div class="col-md-12">                    
+                    <div class="nav nav-pills">
+                      <li class="active"><a href="#">All</a></li>
+                      <li><a href="#">Webstie</a></li>
+                      <li><a href="#">Branding</a></li>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col-md-12 section2">
+                        <div class="col-md-4 col-xs-6 project">
+                            <div class="polaroid khung2">
+                                <a href="#"><img src="images/rock.jpg" alt="Norway" style="width:100%">
+                                <h3>Name Project</h3></a>
+                                <p>Design by Author | May 23, 2015</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6 project">
+                            <div class="polaroid khung2">
+                                <a href="#"><img src="images/rock.jpg" alt="Norway" style="width:100%">
+                                <h3>Name Project</h3></a>
+                                <p>Design by Author | May 23, 2015</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6 project">
+                            <div class="polaroid khung2">
+                                <a href="#"><img src="images/rock.jpg" alt="Norway" style="width:100%">
+                                <h3>Name Project</h3></a>
+                                <p>Design by Author | May 23, 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2 col-md-12">
+                        <div class="col-md-4 col-xs-6 project">
+                            <div class="polaroid khung2">
+                                <a href="#"><img src="images/rock.jpg" alt="Norway" style="width:100%">
+                                <h3>Name Project</h3></a>
+                                <p>Design by Author | May 23, 2015</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6 project">
+                            <div class="polaroid khung2">
+                                <a href="#"><img src="images/rock.jpg" alt="Norway" style="width:100%">
+                                <h3>Name Project</h3></a>
+                                <p>Design by Author | May 23, 2015</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6 project">
+                            <div class="polaroid khung2">
+                                <a href="#"><img src="images/rock.jpg" alt="Norway" style="width:100%">
+                                <h3>Name Project</h3></a>
+                                <p>Design by Author | May 23, 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 plus"><a href="#"><i class="fa fa-plus-circle"></i></a></div>             
+            </div>
+        </section>
+        <section class="gray-bg">
+            <div class="testimonial container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+
+                      <div class="item active">
+                        <q>Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding.</q>
+                        <div class="img-style">
+                            <img src="images/rock.jpg" alt="Norway" class="testimonail-circle">
+                        </div>
+                        <h3>Jack Efron</h3>
+                      </div>
+
+                      <div class="item">
+                        <q>Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding.</q>
+                        <div class="img-style">
+                            <img src="images/img_chania.jpg" alt="Norway" class="testimonail-circle">
+                        </div>
+                        <h3>Jack Efron</h3>
+                      </div>
+
+                      <div class="item">
+                        <q>Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding.</q>
+                        <div class="img-style">
+                            <img src="images/img_flower.jpg" alt="Norway" class="testimonail-circle">
+                        </div>
+                        <h3>Jack Efron</h3>
+                      </div>
+                  
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+        <section id="section3">
+          <div class="container">
+            <div class="col-md-4"><h1>Our <p class="our">Team.</p></h1></div>
+            <div class="col-md-12 row intro">
+                <div class="col-md-4 col-xs-12">
+                    <div>
+                        <a href="#"><img src="images/rock.jpg" alt="Norway" class="section3-circle"></a>
+                        <div class="row section3-gly"> 
+                            <div class="col-md-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                            <div class="col-md-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                            <div class="col-md-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro2">
+                        <a href="#"><h3>Michael Joe</h3></a>
+                        <p>CEO & Founder</p>
+                        <p class="text">Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div>
+                        <a href="#"><img src="images/rock.jpg" alt="Norway" class="section3-circle"></a>
+                        <div class="row section3-gly"> 
+                            <div class="col-md-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                            <div class="col-md-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                            <div class="col-md-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro2">
+                        <a href="#"><h3>Michael Joe</h3></a>
+                        <p>CEO & Founder</p>
+                        <p class="text">Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div>
+                        <a href="#"><img src="images/rock.jpg" alt="Norway" class="section3-circle"></a>
+                        <div class="row section3-gly"> 
+                            <div class="col-md-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                            <div class="col-md-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                            <div class="col-md-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro2">
+                        <a href="#"><h3>Michael Joe</h3></a>
+                        <p>CEO & Founder</p>
+                        <p class="text">Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 plus"><a href="#"><i class="fa fa-plus-circle"></i></a></div> 
+          </div>
+        </section>
+        <section class="gray-bg">
+            <div class="container number">
+                <div class="col-md-3 col-xs-6">
+                    <i class="fa fa-gift"></i>
+                    <p>2009</p>
+                    <a href="#"><h3>Comment</h3></a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <i class="fa fa-gift"></i>
+                    <p>2009</p>
+                    <a href="#"><h3>Comment</h3></a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <i class="fa fa-gift"></i>
+                    <p>2009</p>
+                    <a href="#"><h3>Comment</h3></a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <i class="fa fa-gift"></i>
+                    <p>2009</p>
+                    <a href="#"><h3>Comment</h3></a>
+                </div> 
+            </div>
+        </section>
+        <section id="section4">
+            <div class="container">
+                <div class="col-md-4"><h1>Our <p class="our">skills.</p></h1></div>
+                <div class="row">
+                    <div class="col-md-8 col-xs-12">
+                        <div class="intro col-md-12">
+                            <div class="col-md-3">
+                                <canvas id="myCanvas1" width="150" height="150"></canvas>
+                                <script>
+                                  var canvas = document.getElementById('myCanvas1');
+                                  var context = canvas.getContext('2d');
+                                  var centerX = canvas.width / 2;
+                                  var centerY = canvas.height / 2;
+                                  var radius = 70;
+
+                                  context.beginPath();
+                                  context.arc(centerX, centerY, radius, ((-90) * Math.PI)/180, (180 * Math.PI)/180, false);
+                                  
+                                  context.lineWidth = 7;
+                                  context.strokeStyle = 'green';
+                                  context.font = '15pt Verdana';
+                                  context.fillText("25",centerX-7, centerY+7);
+                                  context.stroke();
+                                </script>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <canvas id="myCanvas2" width="150" height="150"></canvas>
+                                <script>
+                                  var canvas = document.getElementById('myCanvas2');
+                                  var context = canvas.getContext('2d');
+                                  var centerX = canvas.width / 2;
+                                  var centerY = canvas.height / 2;
+                                  var radius = 70;
+
+                                  context.beginPath();
+                                  context.arc(centerX, centerY, radius, ((-90) * Math.PI)/180, (0 * Math.PI)/180, false);
+                                  
+                                  context.lineWidth = 7;
+                                  context.strokeStyle = 'green';
+                                  context.font = '15pt Verdana';
+                                  context.fillText("50",centerX-7, centerY+7);
+                                  context.stroke();
+                                </script>
+                            </div>
+                            <div class="col-md-3">
+                                <canvas id="myCanvas3" width="150" height="150"></canvas>
+                                <script>
+                                  var canvas = document.getElementById('myCanvas3');
+                                  var context = canvas.getContext('2d');
+                                  var centerX = canvas.width / 2;
+                                  var centerY = canvas.height / 2;
+                                  var radius = 70;
+
+                                  context.beginPath();
+                                  context.arc(centerX, centerY, radius, ((-90) * Math.PI)/180, (180 * Math.PI)/180, false);
+                                  
+                                  context.lineWidth = 7;
+                                  context.strokeStyle = 'green';
+                                  context.font = '15pt Verdana';
+                                  context.fillText("75",centerX-7, centerY+7);
+                                  context.stroke();
+                                </script>
+                            </div>
+                            <div class="col-md-3">
+                                <canvas id="myCanvas4" width="150" height="150"></canvas>
+                                <script>
+                                  var canvas = document.getElementById('myCanvas4');
+                                  var context = canvas.getContext('2d');
+                                  var centerX = canvas.width / 2;
+                                  var centerY = canvas.height / 2;
+                                  var radius = 70;
+
+                                  context.beginPath();
+                                  context.arc(centerX, centerY, radius, ((-90) * Math.PI)/180, (90 * Math.PI)/180, false);
+                                  
+                                  context.lineWidth = 7;
+                                  context.strokeStyle = 'green';
+                                  context.font = '15pt Verdana';
+                                  context.fillText("50",centerX-7, centerY+7);
+                                  context.stroke();
+                                </script>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-12 intro2">
+                            <a href="#"><h3>Something about our skills</h3></a>
+                            <p>Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="default-color"><i class="fa fa-unlock-alt"></i>   Collapsible Group 1</a>
+                                </h4>
+                              </div>
+                              <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="default-color"><i class="fa fa-unlock-alt"></i>   Collapsible Group 2</a>
+                                </h4>
+                              </div>
+                              <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="default-color"><i class="fa fa-unlock-alt"></i>   Collapsible Group 2</a>
+                                </h4>
+                              </div>
+                              <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="default-color"><i class="fa fa-unlock-alt"></i>   Collapsible Group 2</a>
+                                </h4>
+                              </div>
+                              <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="default-color"><i class="fa fa-unlock-alt"></i>   Collapsible Group 2</a>
+                                </h4>
+                              </div>
+                              <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                              </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="default-bg">
+            <div class="container">
+                <input type="text" name="abc" value="Enter your email here..." />
+                <button type="button" class="btn btn-default">Subcribe</button>
+            </div>
+        </section>
+        <section class="gray-bg">
+            <div class="container">
+                <div class="mau4-bg">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/wp-logo.png" style="width="20px"; height="20px"; ">Wordpress</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/wp-logo.png" style="width="20px"; height="20px"; ">Wordpress</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/wp-logo.png" style="width="20px"; height="20px"; ">Wordpress</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/wp-logo.png" style="width="20px"; height="20px"; ">Wordpress</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/wp-logo.png" style="width="20px"; height="20px"; ">Wordpress</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        <section id="section5">
+            <div class="container">
+                <div class="col-md-4"><h1>Contact <p class="our">us.</p></h1></div>
+                <div class="col-md-12">
+                    <p>123A Building Road street, Orlando District, US </p>
+                    <p>+0123456789 - +01239545845 | contact@book.com</p>
+                    <div class="gly2">
+                        <a href="#"><i class="fa fa-microphone"></i></a>
+                        <a href="#"><i class="fa fa-info"></i></a>
+                        <a href="#"><i class="fa fa-microphone"></i></a>
+                        <a href="#"><i class="fa fa-info"></i></a>
+                        <a href="#"><i class="fa fa-microphone"></i></a>
+                        <a href="#"><i class="fa fa-info"></i></a>
+                    </div>
+                </div>
+                <form role="form">
+                    <div class="form-group">
+                        <div class="col-md-4">  
+                            <input class="form-control" id="ex1" type="text">
+                        </div>
+                        <div class="col-md-4"> 
+                            <input class="form-control" id="ex2" type="text">
+                        </div>
+
+            
+                        <div class="col-md-8">                          
+                            <input class="form-control" id="ex3" type="text">
+                        </div> 
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-default btn2"><i class="fa fa-caret-square-o-left"></i> Submit</button>
+                        </div>       
+                      
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h1>IDDO</h1>
+            <p>2015 IDDO. All right resevered.</p>
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="build/jquery.plugins.min.js"></script>
+    <script src="build/scripts.min.js"></script>
+
+</body>
+</html>
