@@ -58,11 +58,12 @@
     <meta itemprop="name" content="">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="">
-
+    <script src="build/scripts.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="build/bootstrap.css">
     <!-- <link rel="stylesheet" href="build/slices.css"> -->
     <link rel="stylesheet" href="build/style.css">
+    
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -274,34 +275,13 @@
                     <div>
                         <a href="#"><img src="images/rock.jpg" alt="Norway" class="section3-circle"></a>
                         <div class="row section3-gly"> 
-                            <div class="col-md-4">
+                            <div class="col-md-4, col-xs-4">
                                 <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-4">
                                 <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
                             </div>
-                            <div class="col-md-4">
-                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="intro2">
-                        <a href="#"><h3>Michael Joe</h3></a>
-                        <p>CEO & Founder</p>
-                        <p class="text">Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xs-12">
-                    <div>
-                        <a href="#"><img src="images/rock.jpg" alt="Norway" class="section3-circle"></a>
-                        <div class="row section3-gly"> 
-                            <div class="col-md-4">
-                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
-                            </div>
-                            <div class="col-md-4">
-                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
-                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-4">
                                 <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
                             </div>
                         </div>
@@ -316,13 +296,34 @@
                     <div>
                         <a href="#"><img src="images/rock.jpg" alt="Norway" class="section3-circle"></a>
                         <div class="row section3-gly"> 
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-4">
                                 <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-4">
                                 <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro2">
+                        <a href="#"><h3>Michael Joe</h3></a>
+                        <p>CEO & Founder</p>
+                        <p class="text">Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div>
+                        <a href="#"><img src="images/rock.jpg" alt="Norway" class="section3-circle"></a>
+                        <div class="row section3-gly"> 
+                            <div class="col-md-4 col-xs-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
+                            </div>
+                            <div class="col-md-4 col-xs-4">
                                 <div class="section3-circle2"><a href="#"><i class="fa fa-twitter"></i></a></div> 
                             </div>
                         </div>
@@ -367,82 +368,23 @@
                 <div class="row">
                     <div class="col-md-8 col-xs-12">
                         <div class="intro col-md-12">
-                            <div class="col-md-3">
-                                <canvas id="myCanvas1" width="150" height="150"></canvas>
-                                <script>
-                                  var canvas = document.getElementById('myCanvas1');
-                                  var context = canvas.getContext('2d');
-                                  var centerX = canvas.width / 2;
-                                  var centerY = canvas.height / 2;
-                                  var radius = 70;
 
-                                  context.beginPath();
-                                  context.arc(centerX, centerY, radius, ((-90) * Math.PI)/180, (180 * Math.PI)/180, false);
-                                  
-                                  context.lineWidth = 7;
-                                  context.strokeStyle = 'green';
-                                  context.font = '15pt Verdana';
-                                  context.fillText("25",centerX-7, centerY+7);
-                                  context.stroke();
-                                </script>
+                            <div class="col-md-3">
+                                <canvas id="canvas" width="150" height="150"></canvas>
+                                <script>myFunction(180);</script>
                             </div>
                             
                             <div class="col-md-3">
-                                <canvas id="myCanvas2" width="150" height="150"></canvas>
-                                <script>
-                                  var canvas = document.getElementById('myCanvas2');
-                                  var context = canvas.getContext('2d');
-                                  var centerX = canvas.width / 2;
-                                  var centerY = canvas.height / 2;
-                                  var radius = 70;
-
-                                  context.beginPath();
-                                  context.arc(centerX, centerY, radius, ((-90) * Math.PI)/180, (0 * Math.PI)/180, false);
-                                  
-                                  context.lineWidth = 7;
-                                  context.strokeStyle = 'green';
-                                  context.font = '15pt Verdana';
-                                  context.fillText("50",centerX-7, centerY+7);
-                                  context.stroke();
-                                </script>
+                                <canvas id="canvas2" width="150" height="150"></canvas>
+                                <script>myFunction2(0);</script>
                             </div>
                             <div class="col-md-3">
-                                <canvas id="myCanvas3" width="150" height="150"></canvas>
-                                <script>
-                                  var canvas = document.getElementById('myCanvas3');
-                                  var context = canvas.getContext('2d');
-                                  var centerX = canvas.width / 2;
-                                  var centerY = canvas.height / 2;
-                                  var radius = 70;
-
-                                  context.beginPath();
-                                  context.arc(centerX, centerY, radius, ((-90) * Math.PI)/180, (180 * Math.PI)/180, false);
-                                  
-                                  context.lineWidth = 7;
-                                  context.strokeStyle = 'green';
-                                  context.font = '15pt Verdana';
-                                  context.fillText("75",centerX-7, centerY+7);
-                                  context.stroke();
-                                </script>
+                                <canvas id="canvas3" width="150" height="150"></canvas>
+                                <script>myFunction3(180);</script>
                             </div>
                             <div class="col-md-3">
-                                <canvas id="myCanvas4" width="150" height="150"></canvas>
-                                <script>
-                                  var canvas = document.getElementById('myCanvas4');
-                                  var context = canvas.getContext('2d');
-                                  var centerX = canvas.width / 2;
-                                  var centerY = canvas.height / 2;
-                                  var radius = 70;
-
-                                  context.beginPath();
-                                  context.arc(centerX, centerY, radius, ((-90) * Math.PI)/180, (90 * Math.PI)/180, false);
-                                  
-                                  context.lineWidth = 7;
-                                  context.strokeStyle = 'green';
-                                  context.font = '15pt Verdana';
-                                  context.fillText("50",centerX-7, centerY+7);
-                                  context.stroke();
-                                </script>
+                                <canvas id="canvas4" width="150" height="150"></canvas>
+                                <script>myFunction4(90);</script>
                             </div>
                             
                         </div>
@@ -526,24 +468,12 @@
         </section>
         <section class="gray-bg">
             <div class="container">
-                <div class="mau4-bg">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="images/wp-logo.png" style="width="20px"; height="20px"; ">Wordpress</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="images/wp-logo.png" style="width="20px"; height="20px"; ">Wordpress</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="images/wp-logo.png" style="width="20px"; height="20px"; ">Wordpress</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="images/wp-logo.png" style="width="20px"; height="20px"; ">Wordpress</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="images/wp-logo.png" style="width="20px"; height="20px"; ">Wordpress</a>
-                        </li>
-                    </ul>
+                <div class="row-fluid-product">
+                    <a href="#"><img src="images/a1.png" class="pro-img"></a>
+                    <a href="#"><img src="images/a2.png" class="pro-img"></a>
+                    <a href="#"><img src="images/a3.png" class="pro-img"></a>
+                    <a href="#"><img src="images/a1.png" class="pro-img"></a>
+                    <a href="#"><img src="images/a2.png" class="pro-img"></a>
                 </div>
                 
             </div>
@@ -566,15 +496,15 @@
                 <form role="form">
                     <div class="form-group">
                         <div class="col-md-4">  
-                            <input class="form-control" id="ex1" type="text">
+                            <input class="form-control" id="ex1" type="text" placeholder="NAME">
                         </div>
                         <div class="col-md-4"> 
-                            <input class="form-control" id="ex2" type="text">
+                            <input class="form-control" id="ex2" type="text" placeholder="EMAIL">
                         </div>
 
             
                         <div class="col-md-8">                          
-                            <input class="form-control" id="ex3" type="text">
+                            <input class="form-control" id="ex3" type="text" placeholder="MESSAGE">
                         </div> 
                         <div class="col-md-4">
                             <button type="button" class="btn btn-default btn2"><i class="fa fa-caret-square-o-left"></i> Submit</button>
@@ -598,7 +528,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="build/jquery.plugins.min.js"></script>
-    <script src="build/scripts.min.js"></script>
+    
 
 </body>
 </html>
